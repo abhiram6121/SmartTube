@@ -67,9 +67,6 @@ jobs:
       - name: VirusTotal Summary
         if: steps.vt.outcome == 'success'
         run: |
-          echo "Waiting 150s for VirusTotal engines to report..."
-          sleep 150
-          
           echo "### Security Scan Results" >> $GITHUB_STEP_SUMMARY
           echo "| Artifact Name | VirusTotal Status | Detailed Report |" >> $GITHUB_STEP_SUMMARY
           echo "| :--- | :--- | :--- |" >> $GITHUB_STEP_SUMMARY
