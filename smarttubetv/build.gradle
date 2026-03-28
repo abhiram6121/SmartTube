@@ -241,7 +241,7 @@ dependencies {
         transitive = true
     }
 
-    // debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.14'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.14'
 
     implementation 'net.gotev:speech:' + gotevSpeechVersion
 }
